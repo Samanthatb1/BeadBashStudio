@@ -267,6 +267,17 @@ img{
     color: rgb(255, 98, 7) ;
 }
 
+footer{
+    height: 50px ;
+    background-color: rgb(255, 247, 230);
+    display: flex ;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    font-family: sans-serif;
+    padding: 4px ;
+}
+
 
 @media (max-width: 1500px){
     .info{
