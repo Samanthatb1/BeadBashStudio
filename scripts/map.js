@@ -23,7 +23,7 @@ var marker = L.marker([43.8, -79.4], {icon: greenIcon})
 plotLocations();
 
 async function plotLocations() {
-    const response = await fetch('locations.json');
+    const response = await fetch('scripts/locations.json');
     const data = await response.json();
 
     for ( var i = 0 ; i < data.length ; i++){
