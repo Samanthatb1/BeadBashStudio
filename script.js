@@ -1,13 +1,20 @@
 const fadein = document.querySelectorAll(".fade-in");
 const line = document.getElementById("line");
 const sliders = document.getElementById("double-image");
+const gridSlider = document.getElementById("image-grid");
+const gallery = document.getElementById("image-section");
 
 const appearOptions = {
     threshold: 0.45,
 };
 
-const imageOptions = {
+const blankOptions = {
 };
+
+const gridOptions ={
+    threshold: .3,
+    rootMargin: '400px',
+}
 
 // text fade in
 const appearObserver = new IntersectionObserver
@@ -29,7 +36,7 @@ const lineObserver = new IntersectionObserver
     })
 }, appearOptions);
 
-// image fade in
+// about us image slide in
 const imageObserver = new IntersectionObserver
 (function (entries, observer){
     entries.forEach(entry => {
@@ -37,12 +44,32 @@ const imageObserver = new IntersectionObserver
         entry.target.classList.add("image-appear");
         observer.unobserve(entry.target);
     })
-}, imageOptions);
+}, blankOptions);
+
+// grid image slide in
+const gridObserve = new IntersectionObserver
+(function (entries, observer){
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) return ;
+        entry.target.classList.add("image-appear-grid");
+        observer.unobserve(entry.target);
+    })
+}, gridOptions);
 
 fadein.forEach(fader => {
     appearObserver.observe(fader);
 })
 
+// Image Gallergy 
+function appearImageGallery (){
+    if (gallery.classList.contains("reveal-image-section")){
+        gallery.classList.remove("reveal-image-section");
+    } else {
+        gallery.classList.add("reveal-image-section");
+    }
+}
+
 lineObserver.observe(line);
 imageObserver.observe(sliders);
+gridObserve.observe(gridSlider);
 

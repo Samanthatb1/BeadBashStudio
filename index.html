@@ -2,60 +2,61 @@
 <html>
 <head>
     <title>Bead Bash Studio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Meta Data -->
     <meta name="viewport" content="width=100% width=device-width">
     <link rel="stylesheet" href="styles.css">
 
-
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- Leaflet's CSS  & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
 </head>
 <body>
-
-   
-        <nav class="nav-bar">
-            TAKE FROM https://nmn.gl/
-            <div class="quick-link">
-                <a href="https://www.etsy.com/ca/shop/BeadBashStudio" class="quick-link-text"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z"/>
-                    <rect x="3" y="5" width="18" height="14" rx="2" />
-                    <polyline points="3 7 12 13 21 7" />
-                  </svg> Contact</a>
-            </div>
-        </nav>
-
-        <div class="info">
-            <a href="https://www.etsy.com/ca/shop/BeadBashStudio"><img src="images/etsy.png" class="etsy-image" alt="Image of Etsy Logo"></a>
-            <div class="description">
-                <h1>Bead Bash Studio</h1>
-                <h3>Fun and Flirty Gemstone Jewelry</h3>
-                <p>Bead Bash Studio is a home-owned business run by a working mother and
-                    located in Toronto Canada. 
-                    We work with a variety of materials to satisfy your preferences and also
-                    skin sensitivity including Sterling silver, beaded jewelry, natural gemstones, 
-                    crystals and more. Keeping up to date with the most popular jewelry trends,
-                    while also infusing our own creativity and uniqueness, Bead Bash Studio
-                    has a piece made with care for everyone.</p> <br>
-                    <a class="etsy-link" href="https://www.etsy.com/ca/shop/BeadBashStudio">Visit Our Etsy Shop</a>
-            </div>
+    <nav class="nav-bar">
+        <div class="quick-link">
+            <a href="https://www.etsy.com/ca/shop/BeadBashStudio?section_id=7842682" class="quick-link-text">necklaces</a>
+            <a href="https://www.etsy.com/ca/shop/BeadBashStudio?section_id=7842680" class="quick-link-text">earrings</a>
+            <a href="https://www.etsy.com/ca/shop/BeadBashStudio?section_id=7842677" class="quick-link-text">bracelets</a>
+            <a href="https://www.etsy.com/ca/shop/BeadBashStudio" class="quick-link-text">contact</a>
         </div>
- 
+    </nav>
+
+    <div class="info">
+        <a href="https://www.etsy.com/ca/shop/BeadBashStudio"><img src="images/etsy.png" class="etsy-image" alt="Image of Etsy Logo"></a>
+        <div class="description">
+            <h1>Bead Bash Studio</h1>
+            <h3>Fun and Flirty Gemstone Jewelry</h3>
+            <p>Bead Bash Studio is a home-owned business run by a working mother, and
+                located in Toronto Canada. 
+                We work with a variety of materials to satisfy your preferences while taking into account
+                skin sensitivity. This includes Sterling silver, beaded jewelry, natural gemstones, 
+                crystals and more. Keeping up to date with the most popular jewelry trends,
+                while also infusing our own creativity and uniqueness, Bead Bash Studio
+                has a piece made with care for everyone.</p> <br>
+                <a class="etsy-link" href="https://www.etsy.com/ca/shop/BeadBashStudio">Visit Our Etsy Shop</a>
+        </div>
+    </div>
 
     <div class="about-section">
         <div class="points">
             <h2 >About Us</h2>
             <span id="line"></span>
-        
             <div class="fade-in">
                 <ul>
-                    <li>All jewelry is handmade with care and is always reviewed before shipping to
+                    <li>All jewelry is handmade and is always reviewed before shipping to
                         ensure that there are no damages
                     </li>
                     <li>We offer worldwide shipping</li>
@@ -89,147 +90,104 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="selected-images">
         <div class="image-title">
             <h5>Browse Selected Images</h5>
-            <a class="etsy-link" href="https://www.etsy.com/ca/shop/BeadBashStudio">View Here</a>
+            <a onclick="appearImageGallery()" class="image-page">Click To Expand<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-down" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="12" y1="20" x2="12" y2="10" />
+                <line x1="12" y1="20" x2="16" y2="16" />
+                <line x1="12" y1="20" x2="8" y2="16" />
+                <line x1="4" y1="4" x2="20" y2="4" />
+              </svg></a>
         </div>
-
-        <div class="image-container">
+        <!-- Always viewable section -->
+        <div class="image-container display-images-grid" id="image-grid">
             <a href="https://www.etsy.com/ca/listing/749272618/diffuser-bracelet-setlava-bracelet-set?ref=shop_home_active_40&frs=1" class="gallery-container j-1" >
                 <div class="image">
-                    <img src="images/earring3.jpg">
+                    <img src="images/earring3.jpg" alt="Image of earring">
                 </div>
             </a>
-
             <a href="https://www.etsy.com/ca/listing/597668509/picture-jasper-stacking-bracelet?ref=shop_home_active_68&frs=1" class="gallery-container j-2">
                 <div class="image">
-                    <img src="images/earring2.jpg" alt="Image of bracelet">
+                    <img src="images/earring2.jpg" alt="Image of earring">
                 </div>
             </a>
-
             <a href="https://www.etsy.com/ca/listing/512958210/tiger-eye-bracelet?ref=shop_home_active_18&frs=1" class="gallery-container j-3">
                 <div class="image">
-                    <img src="images/earring5.jpg" alt="Image of bracelet">
+                    <img src="images/earring5.jpg" alt="Image of earring">
                 </div>
             </a>
-
             <a href="https://www.etsy.com/ca/listing/522454848/blue-topaz-earrings?ref=shop_home_active_13&frs=1" class="gallery-container j-4">
                 <div class="image">
                     <img src="images/earring1.jpg" alt="Image of earring">
                 </div>
             </a>
         </div>
+        <!-- Click to see section -->
+        <div class="image-section" id="image-section">
+            <div class="container">
+                <a href="https://www.etsy.com/ca/listing/749272618/diffuser-bracelet-setlava-bracelet-set?ref=shop_home_active_40&frs=1" class="gallery-container img-1" >
+                    <div class="image">
+                        <img src="images/bracelet1.jpg" alt="Image of bracelet">
+                    </div>
+                </a>
+                <a href="https://www.etsy.com/ca/listing/512958210/tiger-eye-bracelet?ref=shop_home_active_18&frs=1" class="gallery-container img-2">
+                    <div class="image">
+                        <img src="images/bracelet3.jpg" alt="Image of bracelet">
+                    </div>
+                </a>
+                <a href="https://www.etsy.com/ca/listing/88828636/pearl-necklace-crystal-and-pearl?ref=shop_home_active_20&frs=1" class="gallery-container img-3">
+                    <div class="image">
+                        <img src="images/necklace1.jpg" alt="Image of necklace">
+                    </div>
+                </a>
+                <a href="https://www.etsy.com/ca/listing/500424320/turquoise-howlite-necklace?ref=shop_home_active_19&frs=1&cns=1" class="gallery-container img-4">
+                    <div class="image">
+                        <img src="images/necklace2.jpg" alt="Image of necklace">
+                    </div>
+                </a>
+                <a href="https://www.etsy.com/ca/listing/729232835/copper-earrings?ref=shop_home_active_10&frs=1" class="gallery-container img-5">
+                    <div class="image">
+                        <img src="images/earring6.jpg" alt="Image of earring">
+                    </div>
+                </a>
+                <a href="https://www.etsy.com/ca/listing/482388179/grey-chalcedony-and-sterling-silver?ref=shop_home_active_11&frs=1" class="gallery-container img-6">
+                    <div class="image">
+                        <img src="images/earring7.jpg" alt="Image of earring">
+                    </div>
+                </a>
+                <a href="https://www.etsy.com/ca/listing/510643251/crystal-and-sterling-silver-earrings?ref=shop_home_active_9&frs=1" class="gallery-container img-7">
+                    <div class="image">
+                        <img src="images/earring8.jpg" alt="Image of earring">
+                    </div>
+                </a>
+                <a href="https://www.etsy.com/ca/listing/708025566/amethyst-and-sterling-silver-earrings?ref=shop_home_active_5&frs=1" class="gallery-container img-8">
+                    <div class="image">
+                        <img src="images/earring9.jpg" alt="Image of earring">
+                    </div>
+                </a>
+            </div>
+        </div> 
     </div>
         
     <div class="shipped">
-        <h4>Where Have We Shipped To?</h4>
+        <div class="location-info">
+            <h4>Where Have We Shipped To?</h4>
+            <p>Although we are based in Toronto, we have shipped across the globe 
+                and have customers in over 20 countries <br> <br>
+                <b>Zoom out of the map and click on any blue marker to see a selected number of locations that have
+                bought from us!</b></p>
+            <p>Contact Us Through: <a href="mailto:boltonbeadbash@yahoo.ca">Email</a></p>
+            <p>Contact Us Through: <a href="https://www.etsy.com/ca/shop/BeadBashStudio">Etsy</a></p>
+        </div>
+            <div id="torontoMap"></div>
     </div>
 
-
-
-<!--
-    <div class="image-section">
-        
-
-        <div class="container">
-
-            <a href="https://www.etsy.com/ca/listing/749272618/diffuser-bracelet-setlava-bracelet-set?ref=shop_home_active_40&frs=1" class="gallery-container img-1" >
-                <div class="image">
-                    <img src="images/bracelet1.jpg">
-                </div>
-            </a>
-
-            <a href="https://www.etsy.com/ca/listing/597668509/picture-jasper-stacking-bracelet?ref=shop_home_active_68&frs=1" class="gallery-container img-2">
-                <div class="image">
-                    <img src="images/bracelet2.jpg" alt="Image of bracelet">
-                </div>
-            </a>
-
-            <a href="https://www.etsy.com/ca/listing/512958210/tiger-eye-bracelet?ref=shop_home_active_18&frs=1" class="gallery-container img-3">
-                <div class="image">
-                    <img src="images/bracelet3.jpg" alt="Image of bracelet">
-                </div>
-            </a>
-
-            <a href="https://www.etsy.com/ca/listing/522454848/blue-topaz-earrings?ref=shop_home_active_13&frs=1" class="gallery-container img-4">
-                <div class="image">
-                    <img src="images/earring1.jpg" alt="Image of earring">
-                </div>
-            </a>
-
-            <a href="https://www.etsy.com/ca/listing/151731011/amethyst-and-glass-earrings?ref=shop_home_active_14&frs=1" class="gallery-container img-5">
-                <div class="image">
-                    <img src="images/earring2.jpg" alt="Image of earring">
-                </div>
-            </a>
-
-            <a href="https://www.etsy.com/ca/listing/127254985/framed-glass-and-gold-earrings?ref=shop_home_active_15&frs=1" class="gallery-container img-6">
-                <div class="image">
-                    <img src="images/earring3.jpg" alt="Image of earring">
-                </div>
-            </a>
-
-            <a href="https://www.etsy.com/ca/listing/69567636/sterling-silver-butterfly-necklace?ref=shop_home_active_6&frs=1" class="gallery-container img-7" >
-                <div class="image">
-                    <img src="images/earring4.jpg" alt="Image of earring">
-                </div>
-            </a>
-
-            <a href="https://www.etsy.com/ca/listing/151732299/sterling-silver-flower-earrings?ref=shop_home_active_34&frs=1&cns=1" class="gallery-container img-8">
-                <div class="image">
-                    <img src="images/earring5.jpg" alt="Image of earring">
-                </div>
-            </a>
-
-            <a href="https://www.etsy.com/ca/listing/88828636/pearl-necklace-crystal-and-pearl?ref=shop_home_active_20&frs=1" class="gallery-container img-9">
-                <div class="image">
-                    <img src="images/necklace1.jpg" alt="Image of necklace">
-                </div>
-            </a>
-
-            <a href="https://www.etsy.com/ca/listing/500424320/turquoise-howlite-necklace?ref=shop_home_active_19&frs=1&cns=1" class="gallery-container img-10">
-                <div class="image">
-                    <img src="images/necklace2.jpg" alt="Image of necklace">
-                </div>
-            </a>
-
-            <a href="https://www.etsy.com/ca/listing/729232835/copper-earrings?ref=shop_home_active_10&frs=1" class="gallery-container img-11">
-                <div class="image">
-                    <img src="images/earring6.jpg" alt="Image of earring">
-                </div>
-            </a>
-
-            <a href="https://www.etsy.com/ca/listing/482388179/grey-chalcedony-and-sterling-silver?ref=shop_home_active_11&frs=1" class="gallery-container img-12">
-                <div class="image">
-                    <img src="images/earring7.jpg" alt="Image of earring">
-                </div>
-            </a>
-
-            <a href="https://www.etsy.com/ca/listing/510643251/crystal-and-sterling-silver-earrings?ref=shop_home_active_9&frs=1" class="gallery-container img-13">
-                <div class="image">
-                    <img src="images/earring8.jpg" alt="Image of earring">
-                </div>
-            </a>
-
-            <a href="https://www.etsy.com/ca/listing/708025566/amethyst-and-sterling-silver-earrings?ref=shop_home_active_5&frs=1" class="gallery-container img-14">
-                <div class="image">
-                    <img src="images/earring9.jpg" alt="Image of earring">
-                </div>
-            </a>
-
-
-        </div>
-
-        <p class="bottom-message">There's more where these came from <br>
-            Head over to our <a href="https://www.etsy.com/ca/shop/BeadBashStudio">Etsy Shop</a> for more!
-        </p>
-
-    </div> --> 
-    <footer></footer>
     <script src="script.js"></script>
+    <script src="map.js"></script>
+    
 </body>
 </html>
