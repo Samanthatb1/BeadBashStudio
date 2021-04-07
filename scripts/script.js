@@ -12,7 +12,7 @@ const blankOptions = {
 };
 
 const gridOptions ={
-    threshold: .3,
+    threshold: 0,
     rootMargin: '400px',
 }
 

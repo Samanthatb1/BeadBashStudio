@@ -629,6 +629,10 @@ footer{
     #torontoMap { 
         width: 100vw;
     }
+    .display-images-grid{
+        opacity: 1 ;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 450px){
