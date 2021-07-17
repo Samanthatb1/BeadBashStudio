@@ -1,10 +1,9 @@
 # BeadBashStudio
 
- Fun and Flirty Gemstone Jewelry
+<img src="/images/shadedArt.png" alt="Logo" width="380" height="400"/>
 
-![Beadbash Logo](/images/shadedArt.png)
-
-Landing page for a local jewelry business within my family
+##  Fun and Flirty Gemstone Jewelry
+Landing page for a local jewelry business
 
 Home: https://beadbashstudio.herokuapp.com/
 

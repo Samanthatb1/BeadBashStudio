@@ -462,8 +462,8 @@ footer{
         max-width: none;
     }
     .etsy-image{
-        height: 300px ;
-        width: 300px ;
+        height: 450px ;
+        width: 370px ;
     }
     .socials{
         margin-right: 0px ;
@@ -641,10 +641,35 @@ footer{
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 578px){
     .nav-bar{
-        height: 70px ;
+        height: auto;
+        display: flex ;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
+
+    .quick-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 20px ;
+    }
+
+    .quick-link a {
+        font-size: 24px ;
+        margin: 10px;
+    }
+
+    .logoArt{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 450px){
     .info{
         padding: 25px 5px 25px 5px;
     }
@@ -654,9 +679,6 @@ footer{
 
     .logo{
        display: none;
-    }
-    .quick-link{
-        margin: 0px ;
     }
     .quick-link-text{
         font-size: 9px ;
