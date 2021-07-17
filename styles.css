@@ -11,12 +11,18 @@ body{
 .nav-bar{
     height: 80px ;
     display: flex ;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100% ;
     background-color:rgb(97, 42, 85);
     border-bottom: thin solid rgba(255, 255, 255, 0.164);
+}
+
+.logoArt{
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
 }
 
 .logo{
@@ -65,7 +71,7 @@ body{
 }
 
 .etsy-image{
-    height: 500px ;
+    height: 590px ;
     width: 500px ;
 }
 

@@ -1,7 +1,11 @@
 # BeadBashStudio
 
+ Fun and Flirty Gemstone Jewelry
+
+![Beadbash Logo](/images/shadedArt.png)
+
 Landing page for a local jewelry business within my family
 
-My Site: https://beadbashstudio.herokuapp.com/
+Home: https://beadbashstudio.herokuapp.com/
 
 Etsy: https://www.etsy.com/ca/shop/BeadBashStudio

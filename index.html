@@ -16,6 +16,14 @@
     <meta name="viewport" content="width=100% width=device-width">
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Leaflet's CSS  & JS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -26,6 +34,7 @@
 </head>
 <body>
     <nav class="nav-bar">
+        <a href="index.html"><img src="images/flatArt.png" class="logoArt" alt="Image of Etsy Logo"></a>
         <div class="quick-link">
             <a href="https://www.etsy.com/ca/shop/BeadBashStudio?section_id=7842682" class="quick-link-text">necklaces</a>
             <a href="https://www.etsy.com/ca/shop/BeadBashStudio?section_id=7842680" class="quick-link-text">earrings</a>
@@ -35,7 +44,7 @@
     </nav>
 
     <div class="info">
-        <a href="https://www.etsy.com/ca/shop/BeadBashStudio"><img src="images/etsy.png" class="etsy-image" alt="Image of Etsy Logo"></a>
+        <a href="https://www.etsy.com/ca/shop/BeadBashStudio"><img src="images/shadedArt.png" class="etsy-image" alt="Image of BeadBash Art"></a>
         <div class="description">
             <h1>Bead Bash Studio</h1>
             <h3>Fun and Flirty Gemstone Jewelry</h3>
@@ -95,13 +104,7 @@
     <div class="selected-images">
         <div class="image-title">
             <h5>Browse Selected Images</h5>
-            <a onclick="appearImageGallery()" class="image-page">Click To Expand<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-down" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <line x1="12" y1="20" x2="12" y2="10" />
-                <line x1="12" y1="20" x2="16" y2="16" />
-                <line x1="12" y1="20" x2="8" y2="16" />
-                <line x1="4" y1="4" x2="20" y2="4" />
-              </svg></a>
+            <a onclick="appearImageGallery()" class="image-page">Click To Expand</a>
         </div>
         <!-- Always viewable section -->
         <div class="image-container display-images-grid" id="image-grid">
