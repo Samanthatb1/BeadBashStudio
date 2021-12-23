@@ -2,13 +2,11 @@
 
 <img src="/client/public/images/shadedArt.png" alt="Logo" width="100" height="100"/>
 
-##  Fun and Flirty Gemstone Jewelry
+##  View it yourself:
+
+**https://beadbashstudio.herokuapp.com/**
 
 Built with React, Express, and deployed with Heroku
-
-Home: https://beadbashstudio.herokuapp.com/
-
-Etsy: https://www.etsy.com/ca/shop/BeadBashStudio
 
 ## Future Improvements
 - Frequenty Asked Questions component
