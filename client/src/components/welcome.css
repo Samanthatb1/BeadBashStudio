@@ -30,6 +30,10 @@
 }
 
 .quick-link-text{
+  cursor: pointer;
+}
+
+.quick-link-text{
   color: white ;
   display: flex ;
   font-size: 20px ;

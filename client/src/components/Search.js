@@ -2,7 +2,7 @@ import React, {useCallback, useState} from 'react';
 import './search.css';
 import Listing from './Listing'; 
 
-const initialListings = 12;
+const initialListings = 10;
 let arrayForHoldingListings = [];
 let disabledButton = false ;
 let sorted = false;
@@ -147,9 +147,10 @@ function Search() {
           </div>
         </div>
       </div>
-      <div></div>
-      <Listing listingsToRender={listingsToShow} />
-      <p id="search-area" class="no-result">{empty ? 'No Results: check your spelling!' : ''}</p>
+      <div id="scroll-to">
+        <Listing listingsToRender={listingsToShow} />
+      </div>
+      <p class="no-result">{empty ? 'No Results: check your spelling!' : ''}</p>
       {empty ? null : <button className="load-etsy" onClick={handleShowMoreListings}>{disabledButton ? 'View Less' : 'View More'}</button>}
     </div>
   );

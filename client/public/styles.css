@@ -18,10 +18,10 @@ body{
 
 .shipped{
     display: flex ;
-    padding: 70px 40px 60px 40px ;
+    padding: 40px 40px 60px 40px ;
     justify-content: space-between;
     align-items: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .location-info{
