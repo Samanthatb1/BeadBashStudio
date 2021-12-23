@@ -1,6 +1,6 @@
 # BeadBashStudio
 
-<img src="/client/public/images/shadedArt.png" alt="Logo" width="80" height="100"/>
+<img src="/client/public/images/shadedArt.png" alt="Logo" width="100" height="100"/>
 
 ##  Fun and Flirty Gemstone Jewelry
 
