@@ -1,4 +1,6 @@
 var mymap = L.map('torontoMap').setView([43.69, -79.4], 5);
+console.log(document.getElementById('torontoMap'));
+console.log('hey');
 
 const attribution =
 '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+}
+
+body{
+    min-width: 235px ;
+    overflow-x: hidden;
+}
+
+/* SHIPPED MAP AREA */
+
+.footer{
+    background-color:#723364;
+}
+
+.shipped{
+    display: flex ;
+    padding: 70px 40px 60px 40px ;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+}
+
+.location-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px ;
+}
+
+.location-info p{
+    font-size: 23px ;
+    margin-top: 23px ;
+    max-width: 600px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(253, 176, 240);
+}
+
+.location-info p:nth-child(2){
+    color: white;
+}
+
+.location-info a {
+  color: rgb(255, 211, 154);
+}
+
+h4 { 
+    font: bold 59px "Century Schoolbook", Georgia, Times, serif;
+    color: rgb(250, 219, 184);
+    line-height: 54px;
+    letter-spacing: -1px;
+}
+
+#torontoMap { 
+    height: 400px; 
+    width: 800px ;
+}
+
+.contact-info{
+    margin-right: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.contact-info h6{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 7px;
+}
+
+
+.contact-info a{
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.shipping-info p{
+    margin-bottom: 15px;
+}
+
+.shipping-info p:hover{
+   text-decoration: none !important;
+}
+
+
+.icon-tabler{
+    margin-right: 10px !important;
+}
+
+.contact-info p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.contact-info p:hover{
+    text-decoration: underline;
+}
+
+.logoArtFooter{
+    height: 150px;
+}
+
+@media (max-width: 1171px) {
+    .contact-info{
+        margin-right: 0vw;
+    }
+}
+
+@media (max-width: 845px){
+    .shipped{
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 30px 30px 30px;
+    }
+    .location-info{
+        margin: 0 0 40px 0 ;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    #torontoMap { 
+        width: 100vw;
+    }
+    .shipped {
+        align-items:center;
+    }
+    .contact-info{
+        margin-right: 0;
+    }
+    .bottom-logo{
+       display:none !important;
+    }
+    .contact-info p{
+        font-size: 12px;
+    }
+    .contact-info h6{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 555px){
+    .shipping-info{
+        display: none;
+    }
+}
+
+@media (max-width: 450px){
+    .bottom-message {
+        font-size: 26px;
+        margin-top: 10px ;
+        margin-bottom: 20px;
+    }
+    h4 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .shipped{
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 10px 30px 10px;
+    }
+    #torontoMap { 
+        width: 100vw;
+        height: 100vw;
+    }
+}
+
+
+
+
+
+

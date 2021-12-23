@@ -1,0 +1,23 @@
+to run the express server
+npm start
+- will run on localhost:3001
+
+to run the react
+cd client 
+npm start
+- will run on localhost:3000
+
+YOU HAVE TO RUN BOTH FOR YOUR WEBSITE TO WORK
+
+deploy to heroku https://www.freecodecamp.org/news/how-to-create-a-react-app-with-a-node-backend-the-complete-guide/
+
+show more 
+https://dev.to/debosthefirst/how-to-create-a-load-more-button-in-react-1lab
+
+
+HOW IT WORKS
+indide of the server folder -> index.js is our server (with express)
+
+
+
+APPARENTLY YOU CANNOT HAVE JS AND CSS FILES IN THE PUBLIC FOLDER!!!!!
