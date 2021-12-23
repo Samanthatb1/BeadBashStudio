@@ -1,6 +1,6 @@
 # BeadBashStudio
 
-<img src="/images/shadedArt.png" alt="Logo" width="80" height="100"/>
+<img src="/client/public/images/shadedArt.png" alt="Logo" width="80" height="100"/>
 
 ##  Fun and Flirty Gemstone Jewelry
 
@@ -15,5 +15,4 @@ Etsy: https://www.etsy.com/ca/shop/BeadBashStudio
 - Customer Reviews component
 
 ## Demo
-<img src="https://github.com/Samanthatb1/BeadBashStudio
-/blob/master/docs/sample.gif" width="600px">
+<img src="https://github.com/Samanthatb1/BeadBashStudio/blob/master/docs/sample.gif" width="600px">
