@@ -2,6 +2,8 @@
 
 <img src="/client/public/images/shadedArt.png" alt="Logo" width="100" height="100"/>
 
+Webpage for Bead Bash Studio, a local jewelry business located in the GTA
+
 ##  View it yourself:
 
 **https://beadbashstudio.herokuapp.com/**
