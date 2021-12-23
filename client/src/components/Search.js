@@ -113,7 +113,7 @@ function Search() {
   }
 
   return (
-    <div className="App">
+    <div id="scroll-to" className="App">
        <div class="selected-images">
         <div class="image-title">
             <h5>Browse Listings</h5>
@@ -147,7 +147,7 @@ function Search() {
           </div>
         </div>
       </div>
-      <div id="scroll-to">
+      <div>
         <Listing listingsToRender={listingsToShow} />
       </div>
       <p class="no-result">{empty ? 'No Results: check your spelling!' : ''}</p>

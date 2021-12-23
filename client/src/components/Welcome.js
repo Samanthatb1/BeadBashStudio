@@ -6,7 +6,7 @@ function Welcome() {
   // moves user to the listings section of the webpage
   function scrollDown(){
     const element = document.getElementById('scroll-to');
-    element.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+    element.scrollIntoView({ block: 'start',  behavior: 'smooth' });
   }
 
   return (
