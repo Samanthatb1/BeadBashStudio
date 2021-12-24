@@ -28,8 +28,8 @@ function Search() {
       setListingsToShow(arrayForHoldingListings);
       disabledButton = true ;
     } else {
-      arrayForHoldingListings = listings.slice(0, initialListings); // holds 12
-      setListingsToShow(arrayForHoldingListings); // renders the 12
+      arrayForHoldingListings = listings.slice(0, initialListings); // holds 10
+      setListingsToShow(arrayForHoldingListings); // renders the 10
       disabledButton = false ;
     }
   }; 
@@ -42,8 +42,8 @@ function Search() {
     })
     .then(data => {
       setListings(data); // setting the listing array to ALL the listings obtained
-      arrayForHoldingListings = data.slice(0, initialListings); // holds 12
-      setListingsToShow(arrayForHoldingListings); // renders the 12
+      arrayForHoldingListings = data.slice(0, initialListings); // holds 10
+      setListingsToShow(arrayForHoldingListings); // renders the 10
       
       //Sort Necklaces, Bracelets, and Earrrings
       let tempSort = data.filter(checkIndex => {
