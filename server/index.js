@@ -12,7 +12,7 @@ require('dotenv').config();
 
 app.use(
   cors({
-    origin: true,
+    origin: '*',
     credentials: true,
     exposedHeaders: ['set-cookie'],
   })
