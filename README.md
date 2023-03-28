@@ -16,3 +16,16 @@ Built with React, Express, and deployed with Heroku
 
 ## Demo
 <img src="https://github.com/Samanthatb1/BeadBashStudio/blob/master/docs/sample.gif" width="600px">
+
+## How To Run
+to run the express server
+``npm start``
+- will run on localhost:3001
+
+to run the client
+``cd client ``
+``npm start``
+- will run on localhost:3000
+
+### Deployments
+- frontend and backend deployed with [onrender]("https://render.com/")
