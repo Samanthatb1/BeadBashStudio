@@ -10,6 +10,14 @@ const app = express();
 // environment variables
 require('dotenv').config();
 
+app.use(
+  cors({
+    origin: true,
+    credentials: true,
+    exposedHeaders: ['set-cookie'],
+  })
+);
+
 // endpoint to get all listings from etsy
 app.get("/allListings", (req, res) => {
   let listings = [];
