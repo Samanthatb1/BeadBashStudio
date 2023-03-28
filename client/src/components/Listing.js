@@ -11,7 +11,7 @@ function Listing (props){
   return (
     <div className="listing-container" key={props.listingsToRender.title + "array"}>
         {props.listingsToRender.map(post => (
-          <a className="listing-box" href={post.url} target="_blank" key={post.url}>
+          <a className="listing-box" href={post.url} target="_blank" rel="noreferrer" key={post.url}>
             <div className="image-box">
               <img src={post.image} className="listing-image" alt={post.title} key={post.title + "image"}/>
             </div>

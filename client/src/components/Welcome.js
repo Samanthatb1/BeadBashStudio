@@ -1,4 +1,3 @@
-import React, {useCallback, useState} from 'react';
 import './welcome.css';
 
 function Welcome() {
@@ -12,7 +11,7 @@ function Welcome() {
   return (
     <div>
         <nav className="nav-bar">
-        <a href="index.html"><img src="images/flatArt.png" class="logoArt" alt="Image of Etsy Logo"></img></a>
+        <a href="index.html"><img src="images/flatArt.png" class="logoArt" alt="Etsy Logo"></img></a>
         <div className="quick-link">
             <a class="quick-link-text" onClick={scrollDown}>browse</a>
             <a href="https://www.etsy.com/ca/shop/BeadBashStudio" class="quick-link-text">etsy</a>
@@ -21,7 +20,7 @@ function Welcome() {
         </nav>
 
         <div className="info">
-            <a href="https://www.etsy.com/ca/shop/BeadBashStudio"><img src="images/shadedArt.png" class="etsy-image" alt="Image of BeadBash Art"></img></a>
+            <a href="https://www.etsy.com/ca/shop/BeadBashStudio"><img src="images/shadedArt.png" class="etsy-image" alt="BeadBash Art"></img></a>
             <div className="description">
                 <h1>Bead Bash Studio</h1>
                 <h3>Fun and Flirty Gemstone Jewelry</h3>
