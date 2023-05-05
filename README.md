@@ -6,7 +6,7 @@ Webpage for Bead Bash Studio, a local jewelry business located in the GTA
 
 ##  View it yourself:
 
-**https://https://beadbashstudio.onrender.com/**
+**https://beadbashstudio.onrender.com/**
 
 Built with React, Express, and deployed with Heroku
 
