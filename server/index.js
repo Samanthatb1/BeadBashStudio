@@ -13,6 +13,12 @@ const app = express();
 // environment variables
 require('dotenv').config();
 
+app.use(cors({
+  origin: 'https://beadbashstudio.onrender.com', // or '*' to allow all origins (be cautious with this)
+  methods: 'GET,POST',
+  allowedHeaders: 'Content-Type'
+}));
+
 // endpoint to get all listings from etsy
 app.get("/allListings", async (req, res) => {
   const filePath = path.resolve(__dirname, 'sample_data.json');
