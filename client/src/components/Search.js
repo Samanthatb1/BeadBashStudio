@@ -36,7 +36,7 @@ function Search() {
 
   React.useEffect(() => { 
     // fetching the etsy listing data at the endpoint in the express server
-    fetch('/allListings')
+    fetch('https://beadbash-api.onrender.com/allListings')
     .then(res => {
       console.log("Response: " , res);
       const data = res.json();
