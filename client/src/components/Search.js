@@ -38,9 +38,12 @@ function Search() {
     // fetching the etsy listing data at the endpoint in the express server
     fetch('/allListings')
     .then(res => {
-      return res.json();
+      console.log("Response: " , res);
+      const data = res.json();
+      return data;
     })
     .then(data => {
+      console.log("Listings: " , data);
       setListings(data); // setting the listing array to ALL the listings obtained
       arrayForHoldingListings = data.slice(0, initialListings); // holds 10
       setListingsToShow(arrayForHoldingListings); // renders the 10
