@@ -2,6 +2,7 @@
 const express = require("express");
 const axios = require('axios').default;
 const path = require('path');
+const fs = require('fs');
 
 const PORT = process.env.PORT || 3001 ;
 
@@ -13,34 +14,22 @@ app.use(express.static(path.resolve(__dirname, '../client/build')));
 require('dotenv').config();
 
 // endpoint to get all listings from etsy
-app.get("/allListings", (req, res) => {
-  let listings = [];
+app.get("/allListings", async (req, res) => {
+  const filePath = path.resolve(__dirname, 'sample_data.json');
 
-  // get request to Bead Bash Studio endpoint
-  axios.get(process.env.ETSY_API_KEY)
-  .then(listingResponse => {
-    // handle success
-    listingResponse.data.results.forEach(item => {
-        listings.push({ // sorting data so its easy to access on the frontend
-            title: item.title,
-            description: item.description,
-            price: item.price,
-            currencyCode: item.currency_code,
-            section: item.Section.title,
-            tags: item.tags,
-            materials: item.materials,
-            url: item.url,
-            image: item.Images[0].url_fullxfull
-          })
-    }); // looping is over
-
-    // send data back
-    res.json(listings) ;
-  })
-  .catch(error => {
-    console.log(error);
+  fs.readFile(filePath, (err, data) => {
+    if (err) {
+      console.error('Error reading or parsing the json listing data:', err);
+      return;
+    }
+    try {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData); // Process the JSON data
+    } catch (err) {
+      console.error('Error reading or parsing the json listing data:', err);
+    }
   });
-  });
+});
 
 // All other GET requests not handled before will return our React app
 app.get('*', (req, res) => {
