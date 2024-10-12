@@ -70,6 +70,7 @@ function Search() {
   function resetListings(){
     setListingsToShow(arrayForHoldingListings);
     document.getElementById('searchBar').value = '';
+    setEmpty(false);
     sorted = false;
   }
 
